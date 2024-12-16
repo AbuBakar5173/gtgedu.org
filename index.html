@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="main-title">GTG - Emporing Future Innovators</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="courseCategory.css">
+    <link rel="stylesheet" href="responsiveness.css">
+    <link rel="stylesheet" href="navBarToggle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Montserrat:wght@600;700&family=Lato:wght@700&family=Poppins:wght@500;700&family=Orbitron:wght@700&family=Exo+2:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nnav">
+            <!-- Logo -->
+            <a href="#">
+                <span class="logo">Galaxy The Global</span>
+            </a>
+            <!-- Links -->
+            <div class="links">
+                <!-- <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul> -->
+            </div>
+            <!-- Toggle Switch -->
+            <div class="left">
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+
+    <main>
+        <section id="hero">
+            <img src="Assets/Herosection03.png" alt="">
+            <a href="#feature" class="cta-button">Start learning</a>
+        </section>
+
+        <section id="feature">
+            <a href="#university-courses" id="goToUniversityCourses">
+                <article class="card-ftr">
+                    <img src="Assets/Master1.png" 3alt="Certified" class="bi">
+                    <h2>Get Certified with GTG</h2>
+                    <p>Enhance your academic credentials with comprehensive courses and certifications</p>
+                    <button></button>
+                </article>
+            </a>
+            <a href="#course-category" id="goToComputerCourses">
+                <article class="card-ftr">
+                    <img src="Assets/Master2.png" alt="Master">
+                    <h2>Master New Skills</h2>
+                    <p>Master the latest technologies and tools in computer science for a brighter future</p>
+                </article>
+            </a>
+        </section>
+
+        <section id="why-us">
+            <article>
+                <h1>Why GTG Acadmey</h1>
+                <p>
+                    At GTG Academy, we are committed to unlocking your full potential by providing hands-on experience,
+                    industry-recognized certifications, and the essential skills required to thrive in the ever-evolving
+                    technology landscape. Our practical, results-driven approach is designed to help you stand out in
+                    the competitive job market and achieve your career aspirations with confidence and success.
+                </p>
+                <div class="us-container">
+                    <!-- Append Cards Dynamically -->
+                </div>
+            </article>
+        </section>
+
+        <section id="course-category">
+
+            <!-- Filter Switch -->
+            <div id="firstFilter" class="filter-switch">
+                <input checked id="computerOption" name="options" type="radio" />
+                <label class="option" for="computerOption">Computer Courses</label>
+                <input id="universityOption" name="options" type="radio" />
+                <label class="option" for="universityOption">University Courses</label>
+                <span class="background"></span>
+            </div>
+
+            <div id="courses-container">
+                <div class="courses" id="computer-courses">
+                    <!-- Cards Added Dynamically -->
+                </div>
+                <div class="courses" id="university-courses" style="display: none;">
+                    <!-- Cards Added Dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <h1>
+                <span>FAQ</span>
+                <span>Frequently Asked Questions</span>
+            </h1>
+            <div class="admission">
+                <span></span>
+            </div>
+            <div class="courses">
+
+            </div>
+            <div class="fees">
+
+            </div>
+            <div class="general">
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-up">
+                <div class="footerLink">
+                    <h3>Institutional Information</h3>
+                    <a href="#">Affiliation and Accredation</a>
+                    <a href="#">Chairmen's Desk</a>
+                    <a href="#">Vision & Mission</a>
+                    <a href="#">Our Teachers</a>
+                </div>
+                <div class="footerLink">
+                    <h3>Contact and Communication</h3>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Franchise-Enquiry</a>
+                </div>
+                <div class="footerLink">
+                    <h3>Resources and Extras</h3>
+                    <a href="#">Web Extras</a>
+                    <a href="#">Photo Galary</a>
+                    <a href="#">Salient Features</a>
+                </div>
+                <div class="footerLink">
+                    <h3>Franchise Information</h3>
+                    <a href="#">Franchise-Enquiry</a>
+                    <a href="#">Franchise-Centers</a>
+                    <a href="#">Franchise-Accomodation</a>
+                </div>
+
+            </div>
+            <div class="footer-down">
+                <span class="quick-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bx-envelope'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                </span>
+                <p>© 2014. galaxytheglobal. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+    <script src="AddCard.js"></script>
+    <script src="courseCategory.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+                }
+            }
+        });
+    </script> -->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                769: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                425: {
+                    slidesPerView: 1,
+                    spaceBetween: 5,
+                },
+            },
+        });
+
+    </script>
+</body>
+
+</html>
