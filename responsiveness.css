@@ -110,6 +110,10 @@
 
     .AboutUs {
         margin: 1rem auto;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 95%;
+        height: 10rem;
     }
 
     .us-container P {
