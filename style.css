@@ -703,6 +703,13 @@ main>section {
     transition: var(--primary-transition);
 }
 
+.AboutUs div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 .AboutUs:hover {
     transform: scale(1.07);
 }
