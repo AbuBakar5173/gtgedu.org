@@ -24,7 +24,7 @@ const WhyUsCards = [
     {
         icon: "bx bx-medal",
         h2: "Get Certified",
-        p: "Stand out in the job market and boost your resume"
+        p: "Stand out in the job market and grow"
     },
     {
         icon: "bx bx-briefcase",
