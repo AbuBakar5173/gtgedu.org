@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="main-title">GTG - Emporing Future Innovators</title>
+    <link rel="icon" href="" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="courseCategory.css">
     <link rel="stylesheet" href="responsiveness.css">
@@ -103,21 +104,39 @@
         </section>
 
         <section id="faq">
-            <h1>
-                <span>FAQ</span>
-                <span>Frequently Asked Questions</span>
-            </h1>
-            <div class="admission">
-                <span></span>
+            <h1>Frequently Asked Questions</h1>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="faq" id="show-courses" checked>
+                    <span>Courses</span>
+                </label>
+                <label>
+                    <input type="radio" name="faq" id="show-admission">
+                    <span>Admission</span>
+                </label>
+                <label>
+                    <input type="radio" name="faq" id="show-fees">
+                    <span>Fees</span>
+                </label>
+                <label>
+                    <input type="radio" name="faq" id="show-general">
+                    <span>General</span>
+                </label>
             </div>
-            <div class="courses">
 
-            </div>
-            <div class="fees">
-
-            </div>
-            <div class="general">
-
+            <div id="faq-container">
+                <div class="courses" id="F-cour">
+                    <!-- FAQs added Dynamically -->
+                </div>
+                <div class="admission" id="F-admi">
+                    <!-- FAQs added Dynamically -->
+                </div>
+                <div class="fees" id="F-fees">
+                    <!-- FAQs added Dynamically -->
+                </div>
+                <div class="general" id="F-gene">
+                    <!-- FAQs added Dynamically -->
+                </div>
             </div>
         </section>
 
@@ -216,6 +235,57 @@
                 },
             },
         });
+
+    </script>
+    <script>
+        // Function to update visibility of FAQ sections based on selected radio button
+        function updateFAQVisibility() {
+            const selectedRadio = document.querySelector('.radio input[type="radio"]:checked');
+            const selectedIdSuffix = selectedRadio.id.split('-')[1]; // Extracts 'courses', 'admission', etc.
+            const faqSections = document.querySelectorAll('#faq-container > div');
+
+            // Loop through sections and show only the relevant one
+            faqSections.forEach(section => {
+                if (section.id === `F-${selectedIdSuffix.substring(0, 4)}`) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Add event listeners to radio buttons to update visibility on change
+        document.querySelectorAll('.radio input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', updateFAQVisibility);
+        });
+
+        // Ensure the correct section is visible on page load
+        window.addEventListener('DOMContentLoaded', updateFAQVisibility);
+
+        // FAQ Toggle Functionality for expanding/collapsing individual FAQ items
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Close any other open FAQ and reset their icons
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        const icon = otherItem.querySelector('.faq-icon');
+                        if (icon) icon.textContent = '+'; // Reset icon to '+'
+                    }
+                });
+
+                // Toggle the clicked FAQ
+                item.classList.toggle('active');
+
+                // Update the icon of the clicked FAQ
+                const icon = item.querySelector('.faq-icon');
+                if (icon) {
+                    icon.textContent = item.classList.contains('active') ? '−' : '+';
+                }
+            });
+        });
+
+
 
     </script>
 </body>
