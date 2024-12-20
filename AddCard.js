@@ -6,8 +6,10 @@ function appendCardsinWhyUs(icon, h2, p) {
 
     let html = `<div class="AboutUs">
                         <i class='${icon}'></i>
-                        <h2>${h2}</h2>
-                        <p>${p}</p>
+                        <div>
+                           <h2>${h2}</h2>
+                            <p>${p}</p>
+                        </div>
                     </div>`
 
     WhyUsCards.insertAdjacentHTML("beforeend", html);
