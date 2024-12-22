@@ -4,42 +4,42 @@ const ComputerCourseCards = [
         category: "Certificate/Diploma",
         subHead: "ADCA, DCA, Tally",
         supportingText: "Ideal for Students, Freshers and Working Professionals.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Programming.webp",
         category: "Programming/IT",
         subHead: "Frontend, Backend, Data Science",
         supportingText: "Ideal for aspiring programmers, developers and IT enthusiasts.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Basics.webp",
         category: "Basic Skills",
         subHead: "Typing, Advance Excel, Internet",
         supportingText: "Ideal for Beginners and anyone looking to dive into computer literacy",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Career.webp",
         category: "Career-Oriented",
         subHead: "Digital Marketing, Management",
         supportingText: "Ideal for Individuals aiming to advance in their careers.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Accounting.webp",
         category: "Accounting/Financial",
         subHead: "Accounting Basics, Excel",
         supportingText: "Ideal for Students and Business owners managing finance",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Creative.webp",
         category: "Creative",
         subHead: "Designing, Animation & VFX",
         supportingText: "Ideal for aspiring designers, animators and creative professionals",
-        link: "#why-us"
+        link: "#"
     }
 ];
 
@@ -51,56 +51,56 @@ const UniversityCourseCards = [
         category: "Arts-Humanities",
         subHead: "BA, MA",
         supportingText: "Ideal for creative students and culture enthusiasts.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Business.webp",
         category: "Commerce-Business",
         subHead: "B.com, M.com, MBA",
         supportingText: "Ideal for students, freshers, and aspiring entrepreneurs.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Science.webp",
         category: "Science-Technology",
         subHead: "B.sc, M.sc",
         supportingText: "Ideal for researchers, innovators, and science enthusiasts.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Technical.webp",
         category: "Engineering",
         subHead: "Mechanical, Technical",
         supportingText: "Ideal for aspiring engineers and technical professionals.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/computers.webp",
         category: "Computer-IT",
         subHead: "BCA, MCA",
         supportingText: "Ideal for programmers, developers, and IT enthusiasts.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/law.webp",
         category: "Law-Management",
         subHead: "PGDCl, MBL",
         supportingText: "Ideal for future lawyers and business leaders.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Education.webp",
         category: "Education",
         subHead: "B.Ed, M.Ed",
         supportingText: "Ideal for aspiring teachers and education professionals.",
-        link: "#why-us"
+        link: "#"
     },
     {
         img_src: "Assets/Safety.webp",
         category: "Safety",
         subHead: "DFSM, PGDISM",
         supportingText: "Ideal for future lawyers and business leaders.",
-        link: "#why-us"
+        link: "#"
     }
 ];
 
