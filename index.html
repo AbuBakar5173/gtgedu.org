@@ -8,6 +8,7 @@
     <link rel="icon" href="Assets/icon.png" type="image/png">
     <link rel="shortcut icon" href="Assets/icon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ElementStyle.css">
     <link rel="stylesheet" href="courseCategory.css">
     <link rel="stylesheet" href="responsiveness.css">
     <link rel="stylesheet" href="navBarToggle.css">
@@ -46,8 +47,22 @@
 
     <main>
         <section id="hero">
-            <img src="Assets/Herosection03.png" alt="">
-            <a href="#feature" class="cta-button">Start learning</a>
+            <div class="left">
+                <h1>
+                    <span>Empowering</span>
+                    Future Innovators
+                </h1>
+                <span>
+                    <h3>Walk in with your dreams</h3>
+                    <h3>Walk out with your future</h3>
+                </span>
+                <span>
+                    <a href="#">Enroll Now >> </a>
+                    <a href="#">Browse Courses</a>
+                </span>
+            </div>
+
+            <img src="Assets/Heroimg.png" alt="">
         </section>
 
         <section id="feature">
@@ -56,7 +71,6 @@
                     <img src="Assets/Master1.png" 3alt="Certified" class="bi">
                     <h2>Get Certified with GTG</h2>
                     <p>Enhance your academic credentials with comprehensive courses and certifications</p>
-                    <button></button>
                 </article>
             </a>
             <a href="#course-category" id="goToComputerCourses">
@@ -72,10 +86,8 @@
             <article>
                 <h1>Why GTG Acadmey</h1>
                 <p>
-                    At GTG Academy, we are committed to unlocking your full potential by providing hands-on experience,
-                    industry-recognized certifications, and the essential skills required to thrive in the ever-evolving
-                    technology landscape. Our practical, results-driven approach is designed to help you stand out in
-                    the competitive job market and achieve your career aspirations with confidence and success.
+                    At GTG Academy, we empower you with hands-on experience, industry certifications, and essential tech
+                    skills to excel in your career and stand out in a competitive job market.
                 </p>
                 <div class="us-container">
                     <!-- Append Cards Dynamically -->
@@ -186,32 +198,6 @@
     <script src="AddCard.js"></script>
     <script src="courseCategory.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script>
-        const progressCircle = document.querySelector(".autoplay-progress svg");
-        const progressContent = document.querySelector(".autoplay-progress span");
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            on: {
-                autoplayTimeLeft(s, time, progress) {
-                    progressCircle.style.setProperty("--progress", 1 - progress);
-                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-                }
-            }
-        });
-    </script> -->
 
     <script>
         var swiper = new Swiper(".mySwiper", {
