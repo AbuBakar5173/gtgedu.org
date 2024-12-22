@@ -73,7 +73,6 @@
         font-size: 1.5rem;
         letter-spacing: 2px;
         line-height: 1.8rem;
-        color: var(--primary-grey);
     }
 
     #hero :nth-child(3) {
@@ -123,6 +122,11 @@
         margin: 0 auto;
     }
 
+    #why-us article>p{
+        width: 90%;
+        line-height: 1.8rem;
+    }
+
     #why-us h1 {
         font-size: 2rem;
     }
@@ -130,10 +134,12 @@
     #why-us p {
         text-align: justify;
         font-size: 1.1rem;
+        line-height: normal;
     }
 
     .us-container {
         width: 95%;
+        margin-top: 0;
     }
 
     .AboutUs {
@@ -141,11 +147,20 @@
         justify-content: space-between;
         flex-direction: row;
         width: 95%;
-        height: 10rem;
+        height: 9rem;
+    }
+
+    .AboutUs div{
+        text-align: start;
+    }
+
+    .AboutUs div p{
+        margin: 0;
     }
 
     .us-container P {
         font-size: 0.6rem;
+        line-height: 1rem;
     }
 
 
